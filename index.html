@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Control Finance - Seu controle financeiro" />
+
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/header.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/titles.css" />
+  <link rel="stylesheet" href="./src/styles/buttons.css" />
+  <link rel="stylesheet" href="./src/styles/modal.css" />
+  <title>Control Finance</title>
+</head>
+
+<body>
+  <header class="header__container">
+    <div class="header__content">
+      <h1 class="title-1-bold"><span>Control</span> Finance</h1>
+      <button class="button__primary header__button-register">Registrar novo valor</button>
+    </div>
+  </header>
+
+  <main class="main__container" id="app">
+    <section class="filter__container">
+      <h2 class="title-2-medium">Resumo financeiro</h2>
+      <ul class="filter__list"></ul>
+    </section>
+
+    <section class="sum__container">
+      <h3 class="text-1-medium">Soma dos valores</h3>
+      <span class="text-1-medium"></span>
+    </section>
+
+    <section class="empty_container">
+      <h2 class="title-2-bold">Nenhum valor cadastrado</h2>
+      <p class="text-1-medium empty__open-modal">Registrar novo valor</p>
+    </section>
+
+    <section class="values__container"></section>
+  </main>
+
+  <dialog class="modal__controller"></dialog>
+  <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>
